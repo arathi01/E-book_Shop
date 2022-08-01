@@ -1,0 +1,67 @@
+.bg-custom{
+	background-color: #028fab;
+}
+
+.navbar .nav-item:hover .nav-link{
+	background-color: white;
+	color: #303f9f;
+	border-radius: 15px;
+}
+.p{
+	font-size: 5px;
+	font-style: italic;
+}
+.h9{
+	font-size:5px;
+	margin-right:10px;
+	font-color:red;
+	
+}
+
+.btn{
+font-size: 12px;
+border-radius: 8px;	
+background-color: #028fab; color: white;
+
+}
+.btn:hover {
+	background-color:white;
+	color: white;
+	border-radius: 15px;
+}
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #028fab 50%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fa1d05 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  
+  color: #028fab;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 20s linear infinite;
+  display: outline-block;
+      font-size: 30px;
+      
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+	.btn:hover{
+		background-color: #028fab;
+		border-color: white;
+	        border-radius: 16px;	
+}
