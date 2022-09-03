@@ -27,9 +27,7 @@
 			<a href="register.jsp"
 				class="btn btn-info text-white">Register</a>
 		</div>
-
 	</div>
-
 </div>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-custom">
@@ -44,28 +42,11 @@
 
 	<div class="collapse navbar-collapse" id="navbarSupportedContent">
 		<ul class="navbar-nav mr-auto">
-			<li class="nav-item active"><a class="nav-link" href="#">Home
+			<li class="nav-item active"><a class="nav-link" href="home.jsp">Home
 					<span class="sr-only">(current)</span>
-			</a></li>
-			<li class="nav-item active"><a class="nav-link" href="#"><i
-					class="fas fa-book-open"></i> Recent Book</a></li>
-			<li class="nav-item active"><a class="nav-link" href="#"><i
-					class="fas fa-book-open"></i> New Book</a></li>
+			</a></li></ul>
+			
 
-
-			<li class="nav-item active"><a class="nav-link disabled"
-				href="#"> <i class="fas fa-book-open"></i> Old Book
-			</a></li>
-		</ul>
-		<form class="form-inline my-2 my-lg-0">
-			<button class="btn btn-light my-5 my-sm-1" type="submit">
-				<i class="fa fa-cog"></i> Setting
-			</button>
-			<button class="btn btn-light my-2 my-sm-0 ml-1" type="submit">
-				<i class="fa fa-phone-square"></i> Contact Us
-			</button>
-
-		</form>
-	</div>
+			</div>
 </nav>
 

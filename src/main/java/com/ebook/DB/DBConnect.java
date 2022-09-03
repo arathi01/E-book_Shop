@@ -1,27 +1,20 @@
 package com.ebook.DB;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.SQLException;
 
-public class DBConnect{
-	public static void main(String args[])
+public class DBConnect {
+	
+	private static Connection connection;
+	public static Connection getConnection()
 	{
-		String url="jdbc:mysql://localhost:3306/ebook-app";
-		String user="root";
-		String password="1234";
 		try {
-			Class.forName("com.mysql.jdbc.Driver");
-			Connection connection=DriverManager.getConnection(url,user,password);
-			System.out.println("Connection is Successful to the database"+url);
-		}catch (ClassNotFoundException e) {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			connection=DriverManager.getConnection("jdbc:mysql://localhost:3306/ebook-app","root","1234");
+		}catch (Exception e) {
 			e.printStackTrace();
-		}catch (SQLException throwables) {
-			throwables.printStackTrace();
 		}
+		return connection;
 	}
 
-	public static Connection getConnection() {
-		// TODO Auto-generated method stub
-		return null;
-	}
 }

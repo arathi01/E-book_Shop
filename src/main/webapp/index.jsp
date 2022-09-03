@@ -1,3 +1,5 @@
+<%@page import="java.sql.Connection"%>
+<%@page import="com.ebook.DB.DBConnect"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -34,6 +36,7 @@
 		<h2 class="text-center animate-charcter"><i class="fa fa-book"></i> E-Book Management System</h2>
  
 	</div>
+	
 	
 	
 	<!-- start Recent Book -->
@@ -88,9 +91,7 @@
 						<div class="row text-center">
 							<a href="" class="btn btn-white btn-sm ml-2"><i class="fa fa-shopping-cart"></i> Add Cart</a> <a
 								href="" class="btn btn-white btn-sm ml-1">View Details</a> <a
-								href="" class="btn btn-white btn-sm ml-1">20 Euro</a>
-
-
+								href="" class="btn btn-white btn-sm ml-1">20 <i class="fa-solid fa-euro-sign"></i></a>
 						</div>
 					</div>
 				</div>
@@ -106,7 +107,7 @@
 						<div class="row text-center">
 							<a href="" class="btn btn-white btn-sm ml-2"><i class="fa fa-shopping-cart"></i> Add Cart</a> <a
 								href="" class="btn btn-white btn-sm ml-1">View Details</a> <a
-								href="" class="btn btn-white btn-sm ml-1">18 Euro</a>
+								href="" class="btn btn-white btn-sm ml-1">18 <i class="fa-solid fa-euro-sign"></i></a>
 
 
 						</div>
@@ -138,7 +139,7 @@
 						<div class="row text-center">
 							<a href="" class="btn btn-white btn-sm ml-2"><i class="fa fa-shopping-cart"></i> Add Cart</a> <a
 								href="" class="btn btn-white btn-sm ml-1">View Details</a> <a
-								href="" class="btn btn-white btn-sm ml-1">10 Euro</a>
+								href="" class="btn btn-white btn-sm ml-1">10 <i class="fa-solid fa-euro-sign"></i></a>
 
 
 						</div>
@@ -156,7 +157,7 @@
 						<div class="row text-center">
 							<a href="" class="btn btn-white btn-sm ml-2"><i class="fa fa-shopping-cart"></i> Add Cart</a> <a
 								href="" class="btn btn-white btn-sm ml-1">View Details</a> <a
-								href="" class="btn btn-white btn-sm ml-1">15 Euro</a>
+								href="" class="btn btn-white btn-sm ml-1">15 <i class="fa-solid fa-euro-sign"></i></a>
 
 
 						</div>
@@ -174,7 +175,7 @@
 						<div class="row text-center">
 							<a href="" class="btn btn-white btn-sm ml-2"><i class="fa fa-shopping-cart"></i> Add Cart</a> <a
 								href="" class="btn btn-white btn-sm ml-1">View Details</a> <a
-								href="" class="btn btn-white btn-sm ml-1">20 Euro</a>
+								href="" class="btn btn-white btn-sm ml-1">20 <i class="fa-solid fa-euro-sign"></i></a>
 
 
 						</div>
@@ -192,7 +193,7 @@
 						<div class="row text-center">
 							<a href="" class="btn btn-white btn-sm ml-2"><i class="fa fa-shopping-cart"></i> Add Cart</a> <a
 								href="" class="btn btn-white btn-sm ml-1">View Details</a> <a
-								href="" class="btn btn-white btn-sm ml-1">18 Euro</a>
+								href="" class="btn btn-white btn-sm ml-1">18 <i class="fa-solid fa-euro-sign"></i></a>
 
 
 						</div>
@@ -224,7 +225,7 @@
 						<div class="row text-center">
 							<a href="" class="btn btn-white btn-sm ml-2"><i class="fa fa-shopping-cart"></i> Add Cart</a> <a
 								href="" class="btn btn-white btn-sm ml-1">View Details</a> <a
-								href="" class="btn btn-white btn-sm ml-1">10 Euro</a>
+								href="" class="btn btn-white btn-sm ml-1">10 <i class="fa-solid fa-euro-sign"></i></a>
 
 
 						</div>
@@ -242,7 +243,7 @@
 						<div class="row text-center">
 							<a href="" class="btn btn-white btn-sm ml-2"><i class="fa fa-shopping-cart"></i> Add Cart</a> <a
 								href="" class="btn btn-white btn-sm ml-1">View Details</a> <a
-								href="" class="btn btn-white btn-sm ml-1">15 Euro</a>
+								href="" class="btn btn-white btn-sm ml-1">8 <i class="fa-solid fa-euro-sign"></i></a>
 
 
 						</div>
@@ -260,7 +261,7 @@
 						<div class="row text-center">
 							<a href="" class="btn btn-white btn-sm ml-2"><i class="fa fa-shopping-cart"></i> Add Cart</a> <a
 								href="" class="btn btn-white btn-sm ml-1">View Details</a> <a
-								href="" class="btn btn-white btn-sm ml-1">20 Euro</a>
+								href="" class="btn btn-white btn-sm ml-1">10 <i class="fa-solid fa-euro-sign"></i></a>
 
 
 						</div>
@@ -278,7 +279,7 @@
 						<div class="row text-center">
 							<a href="" class="btn btn-white btn-sm ml-2"><i class="fa fa-shopping-cart"></i> Add Cart</a> <a
 								href="" class="btn btn-white btn-sm ml-1">View Details</a> <a
-								href="" class="btn btn-white btn-sm ml-1">18 Euro</a>
+								href="" class="btn btn-white btn-sm ml-1">18 <i class="fa-solid fa-euro-sign"></i></a>
 
 
 						</div>

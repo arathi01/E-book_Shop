@@ -7,6 +7,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import com.ebook.DAO.UserDAOImpl;
 import com.ebook.DB.DBConnect;
@@ -24,27 +25,38 @@ public class RegisterServlet extends HttpServlet {
 			String password=req.getParameter("password");
 			String check=req.getParameter("check");
 			
-			//System.out.println(name+" "+email+" "+phoneno+" "+password+" "+check);
+//			System.out.println(name+" "+email+" "+phoneno+" "+password+" "+check);
 
 			User user=new User();
 			user.setName(name);
 			user.setEmail(email);
 			user.setPhoneno(phoneno);
 			user.setPassword(password);
+			
+			HttpSession session=req.getSession();
+			
 			if(check!=null)
 			{
-			UserDAOImpl dao=new UserDAOImpl(DBConnect.getConnection());
-			boolean f=dao.userRegister(user);
+				
+				UserDAOImpl dao = new UserDAOImpl(DBConnect.getConnection());
+				boolean f = dao.userRegister(user);
+
+				if (f) {
+//				System.out.println("User Register Success..");
+					session.setAttribute("successmsg", "Registration Successful...");
+					resp.sendRedirect("register.jsp");
+				} else {
+//				System.out.println("Something wrong on server..");
+					session.setAttribute("failedMsg", "Something wrong on server..");
+					resp.sendRedirect("register.jsp");
+				}
+			}else {
+//				System.out.println("Please Check Agree Terms & Conditions");
+				 session.setAttribute("failedMsg","Please Check Agree Terms & Conditions");
+				    resp.sendRedirect("register.jsp");
+			}
 			
-			if(f)
-			{
-				System.out.println("User Register Success..");
-			}else {
-				System.out.println("Something wrong on server..");
-			}
-			}else {
-				System.out.println("Please Check Agree Terms & Conditions");
-			}
+			
 		}catch (Exception e) {
 			e.printStackTrace();
 		}
